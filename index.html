@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeTube</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="header">
+        <img src="logoSite.png" alt="">
+        <div class="title">MeTube</div>
+        <div class="perfil">Perfil</div>
+    
+    </div>
+
+    <div class = "opçoes">
+        <ul>
+            <li>Editar perfil</li>
+            <li>Email</li>
+            <li>Deletar conta</li>
+        </ul>
+    </div>
+    <div class = "sobrepor"></div>
+
+
+    <div class="pesquisa">
+        <input id = pesquisa type="text" placeholder="Pesquisar">
+        <span class="icon">&#128269;</span>
+    </div>
+    
+    <div class="categorias">
+
+        <div class="categoria">
+            <h2>Em alta</h2>
+            <div class="videos-setas">
+                <button class="prev" onclick="scrollVideos(this, -1)">&#10094;</button>
+                <div class="videos">
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/NcAP83CQgb8?si=9mGIAdq9uxbgKB74" title="raiam santos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/R7Qt15FDNVA?si=CTU2r9msEFKOVjFv" title="anime" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jNQXAC9IVRw?si=NtURvwOo2i5zdWOK" title="antigo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3P7JcQg9Sxg?si=WGHyTGA3JqOSerdh" title="anime" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <button class="next" onclick="scrollVideos(this, 1)">&#10095;</button>
+            </div>
+        </div>
+        
+
+        <div class="categoria">
+            <h2>Recomendados</h2>
+            <div class="videos-setas">
+                <button class="prev" onclick="scrollVideos(this, -1)">&#10094;</button>
+                <div class="videos">
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_HCqOqGwDfE?si=pC__9oGacLxlCsDP" title="anime" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/H8XWRxN8ZsQ?si=hLPp06OEn4TODDhF" title="anime" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jujohujEhTM?si=DUjibWKY5ByXYxQQ" title="anime" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wu3Y_v8JeE8?si=j2Eey2vvYs1I02Of" title="play2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <button class="next" onclick="scrollVideos(this, 1)">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="categoria">
+            <h2>Animações</h2>
+            <div class="videos-setas">
+                <button class="prev" onclick="scrollVideos(this, -1)">&#10094;</button>
+                <div class="videos">
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/mCEcTPXTcgk?si=tfOx39uNPz35nCgU" title="anime" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DGD1NPn0kGg?si=i9iP0w95ph4D1G7N" title="anime" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/XusBJ8ADSH8?si=ng7vU1OWCnfbHmx5" title="gummybear" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/k85mRPqvMbE?si=jHcw5R8kP607HSOi" title="crazyfrpg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <button class="next" onclick="scrollVideos(this, 1)">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="categoria">
+            <h2>Gameplay</h2>
+            <div class="videos-setas">
+                <button class="prev" onclick="scrollVideos(this, -1)">&#10094;</button>
+                <div class="videos">
+                    <div class="video">
+                        <iframe class = "ifr" width="560" height="315" src="https://www.youtube.com/embed/EYlnWKhtLwI?si=gav37M1b6XX6msoY" title="elden ring" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/woRF4Pnl2LU?si=wbLcZ3cyQklRU7oX" title="pacify" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Af0RHapEbrQ?si=Etxu5wlsrQylPC7n" title="gta" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/aWzKb071D9o?si=A6abSvz5sPux__iw" title="minecraft" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <button class="next" onclick="scrollVideos(this, 1)">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="categoria">
+            <h2>Clipes Musicais</h2>
+            <div class="videos-setas">
+                <button class="prev" onclick="scrollVideos(this, -1)">&#10094;</button>
+                <div class="videos">
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Lph9ubW6hw8?si=KW67pEUoO-tULH6Q" title="animeopening" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/EuJ6UR_pD5s?si=XTySJ1W8vqHBv4Px" title="anime" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/aThUfmKQgaY?si=vzvzfav9jFSim85G" title="anime" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Jrg9KxGNeJY?si=6ae066krqDwAp_zN" title="devil may cry vergil" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <button class="next" onclick="scrollVideos(this, 1)">&#10095;</button>
+            </div>
+        </div>
+            <div id="semResultados">
+                <p>Sem resultados para a busca</p>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
